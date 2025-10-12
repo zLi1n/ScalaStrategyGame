@@ -1,0 +1,35 @@
+.root {
+    -fx-background-image: url("../../images/agriculture.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-font-family: 'Quantico';
+}
+
+.character-name {
+    -fx-font-size: 28px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+    -fx-padding: 8;
+    -fx-background-radius: 10;
+}
+
+.dialog-box {
+    -fx-background-color: rgb(0, 0, 0);
+    -fx-padding: 20;
+    -fx-background-radius: 20 20 0 0;
+}
+
+.story-text {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-padding: 10;
+}
+
+.next-button {
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+    -fx-background-color: #4fc3f7;
+    -fx-background-radius: 20;
+    -fx-alignment: center;
+}

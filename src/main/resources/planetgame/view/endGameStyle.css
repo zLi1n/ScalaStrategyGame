@@ -1,0 +1,45 @@
+.win-background {
+    -fx-background-image: url("../../images/urban.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+
+.lose-background {
+    -fx-background-image: url("../../images/dystopia.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+
+.end-title {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00ffc4;
+    -fx-effect: dropshadow(gaussian, #000000, 10, 0.4, 0, 0);
+}
+
+.section-title {
+    -fx-font-size: 24px;
+    -fx-text-fill: #024d51;
+}
+
+.summary-box {
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+    -fx-border-color: white transparent white transparent;
+    -fx-border-width: 10 0 10 0;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, white, 10, 0.4, 0, 0);
+}
+
+.button {
+    -fx-background-color: #4caf50;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+}
+
+.exit-button {
+    -fx-background-color: #d32f2f;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+}

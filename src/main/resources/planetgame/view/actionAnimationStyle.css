@@ -1,0 +1,96 @@
+.root {
+    -fx-background-image: url("../../images/agriculture.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+
+.background-overlay {
+    -fx-background-color: rgba(215, 234, 230, 0.45);
+}
+
+.turn-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.urgent-turn {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffc1c1;
+    -fx-effect: dropshadow(gaussian, #b30008, 10, 0.8, 0, 0);
+}
+
+.stage-off {
+    -fx-fill: #676767;
+}
+
+.stage-on {
+    -fx-fill: #00ff88;
+    -fx-effect: dropshadow(gaussian, #00ff88, 10, 0.6, 0, 0);
+}
+
+.stage-label {
+    -fx-text-fill: #575757;
+    -fx-font-size: 12;
+}
+
+.stage-title {
+    -fx-font-weight: bold;
+}
+
+.connector {
+    -fx-fill: #838383;
+}
+
+#actionImage1, #actionImage2 ,#actionImage3{
+    -fx-background-image: url("../../images/clock.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+}
+
+.bordered-pane {
+    -fx-border-color: white;
+    -fx-border-width: 8px;
+}
+
+.status-overlay {
+    -fx-background-color: white;
+}
+
+.status-box {
+    -fx-border-color: black;
+}
+
+.event-overlay {
+    -fx-background-color: rgba(0, 0, 0, 0.8);
+}
+
+.event-banner {
+    -fx-background-color: linear-gradient(to right, #ffcc00, #ffaa00);
+    -fx-border-color: white;
+    -fx-border-width: 2;
+}
+
+.event-title {
+    -fx-font-size: 30px;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+.event-desc-banner {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-border-color: #dddddd;
+    -fx-border-width: 1;
+}
+
+.event-desc {
+    -fx-text-fill: #333333;
+    -fx-text-alignment: center;
+}
+
+.event-continue {
+    -fx-text-fill: #bbbbbb;
+    -fx-padding: 20 0 0 0;
+}

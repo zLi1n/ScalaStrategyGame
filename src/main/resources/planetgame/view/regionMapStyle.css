@@ -1,0 +1,141 @@
+.root {
+    -fx-background-color: radial-gradient(center 50% 50%, radius 100%, #3ea5ef, #0876c6);
+}
+
+.region-title {
+    -fx-font-size: 36px;
+    -fx-text-fill: #c3ffff;
+    -fx-font-weight: bold;
+}
+
+.forest-region-button, .desert-region-button, .ocean-region-button{
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(gaussian, black, 5, 0.5, 0, 0);
+    -fx-cursor: hand;
+    -fx-border-color: #3d5a3d;
+    -fx-border-width: 2px;
+}
+
+.forest-region-button {
+    -fx-shape: "M 0 0 L 100 0 L 80 40 L 100 80 L 50 100 L 0 60 Z";
+    -fx-background-color: #4caf50;
+    -fx-min-width: 240px;
+    -fx-min-height: 190px;
+}
+
+.desert-region-button {
+    -fx-shape: "M 400 150 C 200 150 150 100 100 200 C 50 250 50 400 100 400 L 200 450 C 350 500 350 500 300 450 Q 350 350 400 500 Q 500 550 550 500 Q 800 450 650 250 Q 450 450 650 200 Q 450 300 450 300 L 450 250 C 450 200 550 200 550 200 L 550 150 L 450 150 L 300 200 L 400 150 ";
+    -fx-background-color: #e0c97d;
+    -fx-min-width: 600px;
+    -fx-min-height: 200px;
+}
+
+.ocean-region-button {
+    -fx-shape: "M 300 200 C 400 300 150 100 150 200 C 50 250 275 375 150 350 L 200 400 C 300 500 350 500 350 450 Q 350 400 400 500 Q 500 550 600 400 Q 600 200 550 250 Q 550 400 500 350 Q 450 300 500 250 L 500 200 C 550 250 550 200 550 200 L 550 150 L 400 150 L 400 150 L 300 200 ";
+    -fx-background-color: #4fc3f7;
+    -fx-min-width: 480px;
+    -fx-min-height: 220px;
+}
+
+.forest-region-button:hover, .desert-region-button:hover, .ocean-region-button:hover {
+    -fx-effect: dropshadow(gaussian, #00ffcc, 10, 0.7, 0, 0);
+}
+
+.status-overlay {
+    -fx-background-color: rgba(138, 138, 138, 0.9);
+    -fx-background-radius: 15;
+    -fx-padding: 25;
+    -fx-border-color: #00ffcc;
+    -fx-border-width: 2;
+    -fx-border-radius: 15;
+}
+
+.status-title {
+    -fx-font-size: 26px;
+    -fx-text-fill: #00ffcc;
+    -fx-font-weight: bold;
+}
+
+.status-label {
+    -fx-text-fill: white;
+    -fx-min-width: 60px;
+}
+
+.value-label {
+    -fx-text-fill: #ffffff;
+    -fx-min-width: 40px;
+    -fx-alignment: CENTER_RIGHT;
+}
+
+.select-button {
+    -fx-background-color: #27ae60;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 20;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, black, 3, 0.3, 0, 1);
+    -fx-cursor: hand;
+}
+
+.select-button:hover {
+    -fx-background-color: #2ecc71;
+}
+
+.close-button {
+    -fx-background-color: #c0392b;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 20;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, black, 3, 0.3, 0, 1);
+    -fx-cursor: hand;
+}
+
+.close-button:hover {
+    -fx-background-color: #e74c3c;
+}
+
+.easy-mode .forest-region-button {
+    -fx-background-color: #81c784;
+}
+.easy-mode .desert-region-button {
+    -fx-background-color: #f0e68c;
+}
+.easy-mode .ocean-region-button {
+    -fx-background-color: #81d4fa;
+}
+
+.medium-mode .forest-region-button {
+    -fx-background-color: #1dff15;
+}
+.medium-mode .desert-region-button {
+    -fx-background-color: #ffb84b;
+}
+.medium-mode .ocean-region-button {
+    -fx-background-color: #61bbff;
+}
+
+.hard-mode .forest-region-button {
+    -fx-background-color: #a2ff00;
+}
+.hard-mode .desert-region-button {
+    -fx-background-color: #f84b00;
+}
+.hard-mode .ocean-region-button {
+    -fx-background-color: #5502d1;
+}
+
+.back-button {
+    -fx-font-size: 24px;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+.back-button:hover {
+    -fx-text-fill: #FFD700;
+}

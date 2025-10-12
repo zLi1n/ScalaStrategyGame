@@ -1,0 +1,44 @@
+.root {
+    -fx-background-image: url("../../images/spaceBg.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+
+.status-report-title {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.status-row {
+    -fx-background-color: rgba(0, 255, 255, 0.25);
+    -fx-background-radius: 10;
+    -fx-padding: 10;
+    -fx-border-color: white transparent white transparent;
+    -fx-border-width: 10 0 10 0;
+    -fx-effect: dropshadow(gaussian, white, 6, 0.4, 0, 0);
+}
+
+.status-label {
+    -fx-text-fill: #000000;
+}
+
+.status-value {
+    -fx-text-fill: #182921;
+    -fx-font-weight: bold;
+}
+
+.status-bar {
+    -fx-accent: #00ccff;
+    -fx-control-inner-background: #222222;
+    -fx-background-insets: 0;
+}
+
+.continue-label {
+    -fx-font-size: 18px;
+    -fx-text-fill: rgba(255, 255, 255, 0.7);
+    -fx-font-weight: bold;
+    -fx-font-family: 'Quantico';
+    -fx-effect: dropshadow(gaussian, black, 3, 0.4, 0, 0);
+}

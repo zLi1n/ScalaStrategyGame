@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="rootPane" onMouseClicked="#handleContinue" prefHeight="720.0" prefWidth="1080.0" styleClass="root" stylesheets="@baseStyle.css,@statusReportStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="planetgame.view.StatusReportController">
+   <HBox alignment="CENTER" layoutX="386.3999938964844" layoutY="55.20000076293945" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0">
+      <children>
+          <Label alignment="CENTER" prefHeight="47.0" prefWidth="449.0" styleClass="status-report-title" text="Yearly Status Report" />
+      </children>
+   </HBox>
+   <VBox layoutX="-1.0" layoutY="144.0" prefHeight="384.0" prefWidth="1081.0" spacing="20.0" styleClass="status-row" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0">
+      <children>
+         <HBox alignment="CENTER" spacing="10.0">
+            <children>
+               <GridPane alignment="CENTER" gridLinesVisible="true" prefHeight="55.0" prefWidth="760.0">
+                  <columnConstraints>
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="453.60003662109375" minWidth="10.0" prefWidth="54.13331832885742" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="926.3999633789062" minWidth="10.0" prefWidth="682.0666816711425" />
+                  </columnConstraints>
+                  <rowConstraints>
+                     <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                  <children>
+                     <HBox alignment="CENTER">
+                        <children>
+                               <ImageView fitHeight="40" fitWidth="40" preserveRatio="true">
+                                   <image>
+                                       <Image url="@../../images/icons/food.png" />
+                                   </image>
+                               </ImageView>
+                        </children>
+                        <GridPane.margin>
+                           <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                        </GridPane.margin>
+                     </HBox>
+                     <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="823.0" GridPane.columnIndex="1">
+                        <children>
+                               <Label prefHeight="18.0" prefWidth="81.0" styleClass="status-label" text="Food" />
+                               <ProgressBar fx:id="foodProgressBar" prefWidth="550.0" progress="0.8" styleClass="status-bar" />
+                               <Label fx:id="foodValueLabel" alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="50.0" styleClass="status-value" text="80" />
+                        </children>
+                        <GridPane.margin>
+                           <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </GridPane.margin>
+                     </HBox>
+                  </children>
+               </GridPane>
+               <StackPane>
+                  <children>
+                     <ImageView fx:id="foodUpgradeImg" fitHeight="40" fitWidth="40" preserveRatio="true" visible="false">
+                        <image>
+                           <Image url="@../../images/icons/up-arrow.png" />
+                        </image>
+                     </ImageView>
+                     <ImageView fx:id="foodDowngradeImg" fitHeight="40" fitWidth="40" preserveRatio="true" visible="false">
+                        <image>
+                           <Image url="@../../images/icons/arrow.png" />
+                        </image>
+                     </ImageView>
+                  </children>
+                  <HBox.margin>
+                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                  </HBox.margin>
+               </StackPane>
+            </children>
+         </HBox>
+         <HBox alignment="CENTER" spacing="10.0">
+            <children>
+               <GridPane alignment="CENTER" gridLinesVisible="true" prefHeight="55.0" prefWidth="760.0">
+                  <columnConstraints>
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="453.60003662109375" minWidth="10.0" prefWidth="54.13331832885742" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="926.3999633789062" minWidth="10.0" prefWidth="682.0666816711425" />
+                  </columnConstraints>
+                  <rowConstraints>
+                     <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                  <children>
+                     <HBox alignment="CENTER">
+                        <children>
+                           <ImageView fitHeight="40" fitWidth="40" preserveRatio="true">
+                              <image>
+                                 <Image url="@../../images/icons/water.png" />
+                              </image>
+                           </ImageView>
+                        </children>
+                        <GridPane.margin>
+                           <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                        </GridPane.margin>
+                     </HBox>
+                     <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="823.0" GridPane.columnIndex="1">
+                        <children>
+                           <Label prefHeight="18.0" prefWidth="81.0" styleClass="status-label" text="Water" />
+                           <ProgressBar fx:id="waterProgressBar" prefWidth="550.0" progress="0.8" styleClass="status-bar" />
+                           <Label fx:id="waterValueLabel" alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="50.0" styleClass="status-value" text="80" />
+                        </children>
+                        <GridPane.margin>
+                           <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </GridPane.margin>
+                     </HBox>
+                  </children>
+               </GridPane>
+               <StackPane>
+                  <children>
+                     <ImageView fx:id="waterUpgradeImg" fitHeight="40" fitWidth="40" preserveRatio="true" visible="false">
+                        <image>
+                           <Image url="@../../images/icons/up-arrow.png" />
+                        </image>
+                     </ImageView>
+                     <ImageView fx:id="waterDowngradeImg" fitHeight="40" fitWidth="40" preserveRatio="true" visible="false">
+                        <image>
+                           <Image url="@../../images/icons/arrow.png" />
+                        </image>
+                     </ImageView>
+                  </children>
+                  <HBox.margin>
+                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                  </HBox.margin>
+               </StackPane>
+            </children>
+         </HBox>
+         <HBox alignment="CENTER" spacing="10.0">
+            <children>
+               <GridPane alignment="CENTER" gridLinesVisible="true" prefHeight="55.0" prefWidth="760.0">
+                  <columnConstraints>
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="453.60003662109375" minWidth="10.0" prefWidth="54.13331832885742" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="926.3999633789062" minWidth="10.0" prefWidth="682.0666816711425" />
+                  </columnConstraints>
+                  <rowConstraints>
+                     <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                  <children>
+                     <HBox alignment="CENTER">
+                        <children>
+                           <ImageView fitHeight="40" fitWidth="40" preserveRatio="true">
+                              <image>
+                                 <Image url="@../../images/icons/soil.png" />
+                              </image>
+                           </ImageView>
+                        </children>
+                        <GridPane.margin>
+                           <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                        </GridPane.margin>
+                     </HBox>
+                     <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="823.0" GridPane.columnIndex="1">
+                        <children>
+                           <Label prefHeight="18.0" prefWidth="81.0" styleClass="status-label" text="Soil" />
+                           <ProgressBar fx:id="soilProgressBar" prefWidth="550.0" progress="0.8" styleClass="status-bar" />
+                           <Label fx:id="soilValueLabel" alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="50.0" styleClass="status-value" text="80" />
+                        </children>
+                        <GridPane.margin>
+                           <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </GridPane.margin>
+                     </HBox>
+                  </children>
+               </GridPane>
+               <StackPane>
+                  <children>
+                     <ImageView fx:id="soilUpgradeImg" fitHeight="40" fitWidth="40" preserveRatio="true" visible="false">
+                        <image>
+                           <Image url="@../../images/icons/up-arrow.png" />
+                        </image>
+                     </ImageView>
+                     <ImageView fx:id="soilDowngradeImg" fitHeight="40" fitWidth="40" preserveRatio="true" visible="false">
+                        <image>
+                           <Image url="@../../images/icons/arrow.png" />
+                        </image>
+                     </ImageView>
+                  </children>
+                  <HBox.margin>
+                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                  </HBox.margin>
+               </StackPane>
+            </children>
+         </HBox>
+         <HBox alignment="CENTER" spacing="10.0">
+            <children>
+               <GridPane alignment="CENTER" gridLinesVisible="true" prefHeight="55.0" prefWidth="760.0">
+                  <columnConstraints>
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="453.60003662109375" minWidth="10.0" prefWidth="54.13331832885742" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="926.3999633789062" minWidth="10.0" prefWidth="682.0666816711425" />
+                  </columnConstraints>
+                  <rowConstraints>
+                     <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                  <children>
+                     <HBox alignment="CENTER">
+                        <children>
+                           <ImageView fitHeight="40" fitWidth="40" preserveRatio="true">
+                              <image>
+                                 <Image url="@../../images/icons/technology.png" />
+                              </image>
+                           </ImageView>
+                        </children>
+                        <GridPane.margin>
+                           <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                        </GridPane.margin>
+                     </HBox>
+                     <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="823.0" GridPane.columnIndex="1">
+                        <children>
+                           <Label prefHeight="18.0" prefWidth="81.0" styleClass="status-label" text="Tech" />
+                           <ProgressBar fx:id="techProgressBar" prefWidth="550.0" progress="0.8" styleClass="status-bar" />
+                           <Label fx:id="techValueLabel" alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="50.0" styleClass="status-value" text="80" />
+                        </children>
+                        <GridPane.margin>
+                           <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </GridPane.margin>
+                     </HBox>
+                  </children>
+               </GridPane>
+               <StackPane>
+                  <children>
+                     <ImageView fx:id="techUpgradeImg" fitHeight="40" fitWidth="40" preserveRatio="true" visible="false">
+                        <image>
+                           <Image url="@../../images/icons/up-arrow.png" />
+                        </image>
+                     </ImageView>
+                     <ImageView fx:id="techDowngradeImg" fitHeight="40" fitWidth="40" preserveRatio="true" visible="false">
+                        <image>
+                           <Image url="@../../images/icons/arrow.png" />
+                        </image>
+                     </ImageView>
+                  </children>
+                  <HBox.margin>
+                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                  </HBox.margin>
+               </StackPane>
+            </children>
+         </HBox>
+         <HBox alignment="CENTER" spacing="10.0">
+            <children>
+               <GridPane alignment="CENTER" gridLinesVisible="true" prefHeight="55.0" prefWidth="760.0">
+                  <columnConstraints>
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="453.60003662109375" minWidth="10.0" prefWidth="54.13331832885742" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="926.3999633789062" minWidth="10.0" prefWidth="682.0666816711425" />
+                  </columnConstraints>
+                  <rowConstraints>
+                     <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  </rowConstraints>
+                  <children>
+                     <HBox alignment="CENTER">
+                        <children>
+                           <ImageView fitHeight="40" fitWidth="40" preserveRatio="true">
+                              <image>
+                                 <Image url="@../../images/icons/happy.png" />
+                              </image>
+                           </ImageView>
+                        </children>
+                        <GridPane.margin>
+                           <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                        </GridPane.margin>
+                     </HBox>
+                     <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="823.0" GridPane.columnIndex="1">
+                        <children>
+                           <Label prefHeight="18.0" prefWidth="81.0" styleClass="status-label" text="Mood" />
+                           <ProgressBar fx:id="moodProgressBar" prefWidth="550.0" progress="0.8" styleClass="status-bar" />
+                           <Label fx:id="moodValueLabel" alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="50.0" styleClass="status-value" text="80" />
+                        </children>
+                        <GridPane.margin>
+                           <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </GridPane.margin>
+                     </HBox>
+                  </children>
+               </GridPane>
+               <StackPane>
+                  <children>
+                     <ImageView fx:id="moodUpgradeImg" fitHeight="40" fitWidth="40" preserveRatio="true" visible="false">
+                        <image>
+                           <Image url="@../../images/icons/up-arrow.png" />
+                        </image>
+                     </ImageView>
+                     <ImageView fx:id="moodDowngradeImg" fitHeight="40" fitWidth="40" preserveRatio="true" visible="false">
+                        <image>
+                           <Image url="@../../images/icons/arrow.png" />
+                        </image>
+                     </ImageView>
+                  </children>
+                  <HBox.margin>
+                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                  </HBox.margin>
+               </StackPane>
+            </children>
+         </HBox>
+      </children>
+      <padding>
+         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+      </padding>
+   </VBox>
+   <Label fx:id="continueLabel" alignment="CENTER" styleClass="continue-label" text="Tap anywhere to continue" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+</AnchorPane>
